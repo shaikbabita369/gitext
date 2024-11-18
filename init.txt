@@ -1,2 +1,9 @@
-Hello World!.....Welcome to Git EXT
-I'm looking into merging files
+<html>
+    <head>
+        <title>html title</title>
+    </head>
+    <body>
+        <h1>html headings</h1>
+    </body>
+
+</html>
