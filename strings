@@ -1,0 +1,148 @@
+clas Main {
+	
+	public static void main(String[] args) 
+	{
+		String s1 = "ABC"; 
+		String s2 = "abc";
+		String s3 = new String("abc");
+		int x=s2.compareTo(s1);
+		System.out.println(x);
+		boolean b = s1.equals(s2);
+		
+		if(b)
+		{
+			System.out.println("equal");
+		}
+		else
+		{
+			System.out.println("not equal");
+		}
+	}
+
+}
+
+//String Reverse
+
+class Main
+{
+	public static void main(String args[])
+	{
+		String s="babita";
+		String rev="";
+		for(int i=s.length()-1;i>=0;i--)
+		{
+			rev=rev+s.charAt(i);
+		}
+		System.out.println(rev);
+		if(s.equals(rev))
+		{
+			System.out.println("It is a Palindrome");
+		}
+		else
+		{
+			System.out.println("It is not a Palindrome");
+		}
+		
+	}
+}
+
+
+//String is Anagram or Not
+
+class Main
+{
+	public static void main(String args[])
+	{
+  		String s4 = "peek";
+		String s5 = "keep";
+		
+		if(s4.length()== s5.length())
+		{
+			char c[] = s4.toCharArray();
+			char c1[]=s5.toCharArray();
+			Arrays.sort(c); 
+			Arrays.sort(c1);
+			boolean b = Arrays.equals(c, c1);
+			if(b)
+			{
+				System.out.println("Anagram");
+			}else
+			{
+				System.out.println("Not Anagram");
+			}
+		}
+		else
+		{
+			System.out.println("strings are not Anagram");
+		}
+		
+		
+	}
+}
+
+
+//Word Count
+
+class Main
+{
+	public static void main(String args[])
+	{
+		String s6 = "i am babita";
+		int scount = 0;    //space count
+		int ccount=0;     //character count
+		for(int i = 0; i<=s6.length()-1;i++)
+		{
+			char c = s6.charAt(i);
+		   if(c != ' ')
+		   {
+			  ccount++;   
+		   }
+		   else
+		   {
+			   scount++; 
+		   }
+		}
+		
+        System.out.println("ccount :" + ccount);
+        System.out.println("scount :" + scount);
+        /*String sr[]= s6.split(" ");
+        System.out.println("wcount :" + sr.length);*/
+        int wcount=scount+1;
+        System.out.println("wcount :" + wcount);
+		
+		
+	}
+}
+
+
+
+//upper char to lower char and lower char to upper char
+
+class Main
+{
+	public static void main(String args[])
+	{
+		String s7 = "BAbita";  //output--> baBITA
+		String new1 = "";
+		for(int i = 0; i<=s7.length()-1;i++)
+		{
+			char c = s7.charAt(i);
+			if(c>='A'&& c<= 'Z')
+			{
+				int l = c + 32;
+				char m = (char)l;
+				new1 = new1 + m;
+			}
+			else
+			{
+				int l = c - 32;
+				char m = (char)l;
+				new1 = new1 + m;
+			}
+			
+		}
+		System.out.println(new1);
+        
+		
+	}
+}
